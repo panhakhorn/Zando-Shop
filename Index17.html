@@ -1,0 +1,1184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Zando</title>
+
+    <!-- link bootstrap css -->
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+    <!-- script js bootstrap -->
+    <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- link cdn icon bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <!-- link google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Battambang:wght@100;300;400;700;900&family=Bayon&family=Bebas+Neue&family=Bokor&family=Dangrek&family=Fasthand&family=Moul&family=Preahvihear&family=Siemreap&family=Taprom&display=swap" rel="stylesheet">
+
+    <!-- all link file css -->
+    <!-- link header css -->
+    <link rel="stylesheet" href="./style/header.css">
+    <!-- link banner -->
+    <link rel="stylesheet" href="./style/banner.css">
+    <!-- link footer css -->
+     <link rel="stylesheet" href="./style/footer.css">
+</head>
+<body>
+    <!-- header -->
+    <header class="container-fluid position-sticky top-0 z-3 bg-light p-0">
+        <nav id="nav-top" class="container navbar px-3 px-lg-0 p-0">
+          <!-- menu -->
+            <ul class="nav d-none d-lg-flex">
+              <li class="nav-item">
+                <a href="#WOMEN" class="nav-link text-dark fw-bold">WOMEN</a>
+                  </li>
+                <li class="nav-item">
+            <a href="#men" class="nav-link text-dark fw-bold">MEN</a>
+              </li>
+                <li class="nav-item">
+                  <a href="#boys" class="nav-link text-dark fw-bold">BOYS</a>
+                    </li>
+                <li class="nav-item">
+            <a href="" class="nav-link text-dark fw-bold">GIRLS</a>
+              </li>
+                </ul>
+                   <!-- logo and icon login register -->
+            <div class="navbar gap-5">
+               <!-- logo -->
+                  <a href="" class="fs-2 navbar-brand fw-bold me-5 p-0">ZANDO</a>
+                    <div class="navbar d-none d-lg-flex gap-3">
+                       <!-- search input -->
+                        <input type="text" placeholder="Search" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop"
+                           class="form-control shadow-none px-3" style="width: 35%;">
+                    <!-- icon -->
+                    <i class="bi bi-bell" style="cursor: pointer;"></i>
+                    <i class="bi bi-heart fs-5" style="cursor: pointer;"></i>
+                    <i class="bi bi-bag fs-5" style="cursor: pointer;"></i>
+                   
+                    <!-- button login and register -->
+                    <button class="btn btn-outline-dark " style="font-weight:500;">LOGIN</button>
+                    <button class="btn btn-outline-dark" style="font-weight:500;">REGISTER</button>
+                </div>
+            </div>
+            <!-- icon sidebar -->
+            <div class="d-flex d-lg-none align-items-center gap-3">
+                <i class="bi bi-search fs-3 d-flex d-lg-none" 
+                    data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop"></i>
+                <i class="bi bi-bag fs-3 d-flex d-lg-none"></i>
+                <i class="bi bi-list fs-1 d-flex d-lg-none" data-bs-toggle="offcanvas" data-bs-target="#sidbar"></i>
+            </div>
+        </nav>
+
+        <nav id="nav-bottom" class="d-flex align-items-center 
+            justify-content-center text-danger fw-bold">
+            ចំណាយ​ចាប់ពី 40$ FREE សេវាដឹកជញ្ជូន!
+        </nav>
+
+        <!-- sidebar -->
+        <div class="offcanvas w-75 d-lg-none offcanvas-start bg-light" data-bs-scroll="true" tabindex="-1" id="sidbar" aria-labelledby="offcanvasWithBothOptionsLabel">
+            
+            <div class="offcanvas-header border-bottom" style="height: 9vh;">
+                <h2 class="text-dark fw-bold m-0">ZANDO.</h2>
+                <button type="button" class="btn-close bg-light" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+
+
+            <div class="offcanvas-body p-0">
+                <ul class="nav flex-column">
+                    <li class="nav-item py-3"><a href="" class="nav-link text-dark fs-4">
+                        Home</a>
+                    </li>
+                    <li class="nav-item py-3">
+                        <a href="" class="nav-link text-dark fs-4">About Us</a>
+                    </li>
+                    <li class="nav-item py-3">
+                        <a href="" class="nav-link text-dark fs-4">Service</a>
+                    </li>
+                    <li class="nav-item py-3">
+                        <a href="" class="nav-link text-dark fs-4">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+        <!-- modal search -->
+        <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+            <div class="container">
+                <div class="offcanvas-header ps-0 pt-5 pb-3 border-bottom border-dark">
+                    <input type="text" class="form-control ps-0 fs-5 shadow-none border-0" 
+                        placeholder="ស្វែងរកទំនិញ...">
+                    <button type="button" class="btn-close shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+            </div>
+        </div>
+        
+    </header>
+
+    <!-- main-content -->
+    <main>
+        <!-- Banner -->
+         <div class="container-fluid p-0 ">
+            <div id="banner-image" class="container position-relative ">
+                <img src="./assets/image/Image Zando.png" class="w-100 h-100 object-fit-cover" alt="banner-image">
+                <!-- container-button -->
+                 <div id="main-btn-shop" class="position-absolute w-100 d-flex justify-content-center pb-4 pb-md-0">
+                     <button id="btn-shop" class="btn border-3 mx-1 py-md-2 px-md-4 text-light border-light"> SHOP WOMEN </button>
+                     <button id="btn-shop" class="btn border-3 mx-1 py-md-2 px-md-4 text-light border-light"> SHOP MEN </button>
+                 </div>
+            </div>
+         </div> 
+
+         <!-- Logo Company -->
+          <div class="container d-flex overflow-hidden overflow-x-scroll py-2 px-0 ">
+            <img id="logo-company" src="./assets/icon/Zando_Web-1.png" alt="">
+            <img id="logo-company" src="./assets/icon/Ten11_Web-1.png" alt="">
+            <img id="logo-company" src="./assets/icon/Sisburma_Web-1.png" alt="">
+            <img id="logo-company" src="./assets/icon/Routine_Web-1.png" alt="">
+            <img id="logo-company" src="./assets/icon/Routine_Web-1 (1).png" alt="">
+            <img id="logo-company" src="./assets/icon/361_Web-1.png" alt="">
+          </div>
+
+          <!-- Carousel -->
+           <div id="carousel-banner" class="container bg-secondary p-0">
+            <div id="carouselExampleAutoplaying" class="carousel slide h-100" data-bs-ride="carousel">
+              <div class="carousel-inner h-100">
+                <div class="carousel-item h-100 active">
+                    <img src="./assets/image/634419954_3917447118549451_7627263290835726538_n.jpg" class="d-block h-100 w-100" alt="...">
+                </div>
+                <div class="carousel-item h-100 ">
+                    <img src="./assets/image/638127149_884838337714232_8718670010196790588_n.jpg" class="d-block h-100 w-100" alt="...">
+                </div>
+                <div class="carousel-item h-100">
+                    <img src="./assets/image/638250385_1628963428103355_6301187022303058312_n.jpg" class="d-block h-100 w-100" alt="...">
+                </div>
+                 <div class="carousel-item h-100 ">
+                    <img src="./assets/image/639005377_3879551575515576_440872667524151088_n.jpg" class="d-block h-100 w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+            </div>
+           </div>
+
+           <!-- WOMEN PRODUCT -->
+            
+          <div id="WOMEN" class="container p-0 py-5">
+                <!-- Tittle -->
+                 <h2 class="fw-bold "> WOMEN PRODUCT 🔥</h2>
+
+                 <!-- Main-Card -->
+                  <div class="container row m-auto py-3 p-0">
+                    <!-- Card -->
+                     <div class=" col-12 col-md-6 col-lg-3 mb-4" style="height: 550px;">
+                        <div class="card h-100">
+                            <div class="card-header position-relative p-0" style="height: 75%;">
+                              <img src="./assets/image/A6.jpg" class="w-100 h-100 object-fit-cover " alt="">
+                              <button class="btn btn-danger py-0 fw-bold position-absolute" style="left: 15px; top: 20px;"> -15% </button>
+                            </div>
+                          <div class="card-body" style="height: 25%;">
+                           <div class="d-flex justify-content-between">
+                             <h5 class="text-danger"> US $11.55 
+                                <del class="text-secondary"> US $99.99 </del> 
+                             </h5>
+                             <!-- icon -->
+                              <i class="bi bi-heart-fill fw-bold"></i>
+                           </div>
+                           <!-- Tittle -->
+                            <h5> Regular Polo Shirt </h5>
+                           <!-- Button -->
+                            <div class="d-flex justify-content-between">
+                                <button class="btn col-6 btn-primary"> ADD TO CARD </button>
+                                <button class="btn btn-success"> BUY NOW </button>
+                            </div>
+                          </div>
+                        </div>                       
+                     </div>
+                     <!-- Card -->
+                        <div class=" col-12 col-md-6 col-lg-3 mb-4" style="height: 550px;">
+                           <div class="card h-100">
+                               <div class="card-header position-relative p-0" style="height: 75%;">
+                                 <img src="./assets/image/A5.jpg" class="w-100 h-100 object-fit-cover " alt="">
+                                 <button class="btn btn-danger py-0 fw-bold position-absolute" style="left: 15px; top: 20px;"> -15% </button>
+                               </div>
+                             <div class="card-body" style="height: 25%;">
+                              <div class="d-flex justify-content-between">
+                                <h5 class="text-danger"> US $11.55 
+                                   <del class="text-secondary"> US $99.99 </del> 
+                                </h5>
+                                <!-- icon -->
+                                 <i class="bi bi-heart-fill fw-bold"></i>
+                              </div>
+                              <!-- Tittle -->
+                               <h5> Regular Polo Shirt </h5>
+                              <!-- Button -->
+                               <div class="d-flex justify-content-between">
+                                   <button class="btn col-6 btn-primary"> ADD TO CARD </button>
+                                   <button class="btn btn-success"> BUY NOW </button>
+                               </div>
+                             </div>
+                           </div>                       
+                        </div>
+                    <!-- Card -->
+                     <div class=" col-12 col-md-6 col-lg-3 mb-4" style="height: 550px;">
+                        <div class="card h-100">
+                            <div class="card-header position-relative p-0" style="height: 75%;">
+                              <img src="./assets/image/A2.jpg" class="w-100 h-100 object-fit-cover " alt="">
+                              <button class="btn btn-danger py-0 fw-bold position-absolute" style="left: 15px; top: 20px;"> -15% </button>
+                            </div>
+                          <div class="card-body" style="height: 25%;">
+                           <div class="d-flex justify-content-between">
+                             <h5 class="text-danger"> US $11.55 
+                                <del class="text-secondary"> US $99.99 </del> 
+                             </h5>
+                             <!-- icon -->
+                              <i class="bi bi-heart-fill fw-bold"></i>
+                           </div>
+                           <!-- Tittle -->
+                            <h5> Regular Polo Shirt </h5>
+                           <!-- Button -->
+                            <div class="d-flex justify-content-between">
+                                <button class="btn col-6 btn-primary"> ADD TO CARD </button>
+                                <button class="btn btn-success"> BUY NOW </button>
+                            </div>
+                          </div>
+                        </div>                       
+                     </div>
+                     <!-- Card -->
+                        <div class=" col-12 col-md-6 col-lg-3 mb-4" style="height: 550px;">
+                           <div class="card h-100">
+                               <div class="card-header position-relative p-0" style="height: 75%;">
+                                 <img src="./assets/image/A3.jpg" class="w-100 h-100 object-fit-cover " alt="">
+                                 <button class="btn btn-danger py-0 fw-bold position-absolute" style="left: 15px; top: 20px;"> -15% </button>
+                               </div>
+                             <div class="card-body" style="height: 25%;">
+                              <div class="d-flex justify-content-between">
+                                <h5 class="text-danger"> US $11.55 
+                                   <del class="text-secondary"> US $99.99 </del> 
+                                </h5>
+                                <!-- icon -->
+                                 <i class="bi bi-heart-fill fw-bold"></i>
+                              </div>
+                              <!-- Tittle -->
+                               <h5> Regular Polo Shirt </h5>
+                              <!-- Button -->
+                               <div class="d-flex justify-content-between">
+                                   <button class="btn col-6 btn-primary"> ADD TO CARD </button>
+                                   <button class="btn btn-success"> BUY NOW </button>
+                               </div>
+                             </div>
+                           </div>                       
+                        </div>
+                  </div>
+                  
+                    <!-- Main-Card -->
+                  <div class="container row m-auto py-3 p-0">
+                    <!-- Card -->
+                     <div class=" col-12 col-md-6 col-lg-3 mb-4" style="height: 550px;">
+                        <div class="card h-100">
+                            <div class="card-header position-relative p-0" style="height: 75%;">
+                              <img src="./assets/image/A7.jpg" class="w-100 h-100 object-fit-cover " alt="">
+                              <button class="btn btn-danger py-0 fw-bold position-absolute" style="left: 15px; top: 20px;"> -15% </button>
+                            </div>
+                          <div class="card-body" style="height: 25%;">
+                           <div class="d-flex justify-content-between">
+                             <h5 class="text-danger"> US $11.55 
+                                <del class="text-secondary"> US $99.99 </del> 
+                             </h5>
+                             <!-- icon -->
+                              <i class="bi bi-heart-fill fw-bold"></i>
+                           </div>
+                           <!-- Tittle -->
+                            <h5> Regular Polo Shirt </h5>
+                           <!-- Button -->
+                            <div class="d-flex justify-content-between">
+                                <button class="btn col-6 btn-primary"> ADD TO CARD </button>
+                                <button class="btn btn-success"> BUY NOW </button>
+                            </div>
+                          </div>
+                        </div>                       
+                     </div>
+                     <!-- Card -->
+                        <div class=" col-12 col-md-6 col-lg-3 mb-4" style="height: 550px;">
+                           <div class="card h-100">
+                               <div class="card-header position-relative p-0" style="height: 75%;">
+                                 <img src="./assets/image/A8.jpg" class="w-100 h-100 object-fit-cover " alt="">
+                                 <button class="btn btn-danger py-0 fw-bold position-absolute" style="left: 15px; top: 20px;"> -15% </button>
+                               </div>
+                             <div class="card-body" style="height: 25%;">
+                              <div class="d-flex justify-content-between">
+                                <h5 class="text-danger"> US $11.55 
+                                   <del class="text-secondary"> US $99.99 </del> 
+                                </h5>
+                                <!-- icon -->
+                                 <i class="bi bi-heart-fill fw-bold"></i>
+                              </div>
+                              <!-- Tittle -->
+                               <h5> Regular Polo Shirt </h5>
+                              <!-- Button -->
+                               <div class="d-flex justify-content-between">
+                                   <button class="btn col-6 btn-primary"> ADD TO CARD </button>
+                                   <button class="btn btn-success"> BUY NOW </button>
+                               </div>
+                             </div>
+                           </div>                       
+                        </div>
+                    <!-- Card -->
+                     <div class=" col-12 col-md-6 col-lg-3 mb-4" style="height: 550px;">
+                        <div class="card h-100">
+                            <div class="card-header position-relative p-0" style="height: 75%;">
+                              <img src="./assets/image/A9.jpg" class="w-100 h-100 object-fit-cover " alt="">
+                              <button class="btn btn-danger py-0 fw-bold position-absolute" style="left: 15px; top: 20px;"> -15% </button>
+                            </div>
+                          <div class="card-body" style="height: 25%;">
+                           <div class="d-flex justify-content-between">
+                             <h5 class="text-danger"> US $11.55 
+                                <del class="text-secondary"> US $99.99 </del> 
+                             </h5>
+                             <!-- icon -->
+                              <i class="bi bi-heart-fill fw-bold"></i>
+                           </div>
+                           <!-- Tittle -->
+                            <h5> Regular Polo Shirt </h5>
+                           <!-- Button -->
+                            <div class="d-flex justify-content-between">
+                                <button class="btn col-6 btn-primary"> ADD TO CARD </button>
+                                <button class="btn btn-success"> BUY NOW </button>
+                            </div>
+                          </div>
+                        </div>                       
+                     </div>
+                     <!-- Card -->
+                        <div class=" col-12 col-md-6 col-lg-3 mb-4" style="height: 550px;">
+                           <div class="card h-100">
+                               <div class="card-header position-relative p-0" style="height: 75%;">
+                                 <img src="./assets/image/A10.jpg" class="w-100 h-100 object-fit-cover " alt="">
+                                 <button class="btn btn-danger py-0 fw-bold position-absolute" style="left: 15px; top: 20px;"> -15% </button>
+                               </div>
+                             <div class="card-body" style="height: 25%;">
+                              <div class="d-flex justify-content-between">
+                                <h5 class="text-danger"> US $11.55 
+                                   <del class="text-secondary"> US $99.99 </del> 
+                                </h5>
+                                <!-- icon -->
+                                 <i class="bi bi-heart-fill fw-bold"></i>
+                              </div>
+                              <!-- Tittle -->
+                               <h5> Regular Polo Shirt </h5>
+                              <!-- Button -->
+                               <div class="d-flex justify-content-between">
+                                   <button class="btn col-6 btn-primary"> ADD TO CARD </button>
+                                   <button class="btn btn-success"> BUY NOW </button>
+                               </div>
+                             </div>
+                           </div>                       
+                        </div>
+                  </div>
+
+                     <!-- Main-Card -->
+                  <div class="container row m-auto py-3 p-0">
+                    <!-- Card -->
+                     <div class=" col-12 col-md-6 col-lg-3 mb-4" style="height: 550px;">
+                        <div class="card h-100">
+                            <div class="card-header position-relative p-0" style="height: 75%;">
+                              <img src="./assets/image/bb.jpg" class="w-100 h-100 object-fit-cover " alt="">
+                              <button class="btn btn-danger py-0 fw-bold position-absolute" style="left: 15px; top: 20px;"> -15% </button>
+                            </div>
+                          <div class="card-body" style="height: 25%;">
+                           <div class="d-flex justify-content-between">
+                             <h5 class="text-danger"> US $11.55 
+                                <del class="text-secondary"> US $99.99 </del> 
+                             </h5>
+                             <!-- icon -->
+                              <i class="bi bi-heart-fill fw-bold"></i>
+                           </div>
+                           <!-- Tittle -->
+                            <h5> Regular Polo Shirt </h5>
+                           <!-- Button -->
+                            <div class="d-flex justify-content-between">
+                                <button class="btn col-6 btn-primary"> ADD TO CARD </button>
+                                <button class="btn btn-success"> BUY NOW </button>
+                            </div>
+                          </div>
+                        </div>                       
+                     </div>
+                     <!-- Card -->
+                        <div class=" col-12 col-md-6 col-lg-3 mb-4" style="height: 550px;">
+                           <div class="card h-100">
+                               <div class="card-header position-relative p-0" style="height: 75%;">
+                                 <img src="./assets/image/jj.jpg" class="w-100 h-100 object-fit-cover " alt="">
+                                 <button class="btn btn-danger py-0 fw-bold position-absolute" style="left: 15px; top: 20px;"> -15% </button>
+                               </div>
+                             <div class="card-body" style="height: 25%;">
+                              <div class="d-flex justify-content-between">
+                                <h5 class="text-danger"> US $11.55 
+                                   <del class="text-secondary"> US $99.99 </del> 
+                                </h5>
+                                <!-- icon -->
+                                 <i class="bi bi-heart-fill fw-bold"></i>
+                              </div>
+                              <!-- Tittle -->
+                               <h5> Regular Polo Shirt </h5>
+                              <!-- Button -->
+                               <div class="d-flex justify-content-between">
+                                   <button class="btn col-6 btn-primary"> ADD TO CARD </button>
+                                   <button class="btn btn-success"> BUY NOW </button>
+                               </div>
+                             </div>
+                           </div>                       
+                        </div>
+                    <!-- Card -->
+                     <div class=" col-12 col-md-6 col-lg-3 mb-4" style="height: 550px;">
+                        <div class="card h-100">
+                            <div class="card-header position-relative p-0" style="height: 75%;">
+                              <img src="./assets/image/ll.jpg" class="w-100 h-100 object-fit-cover " alt="">
+                              <button class="btn btn-danger py-0 fw-bold position-absolute" style="left: 15px; top: 20px;"> -15% </button>
+                            </div>
+                          <div class="card-body" style="height: 25%;">
+                           <div class="d-flex justify-content-between">
+                             <h5 class="text-danger"> US $11.55 
+                                <del class="text-secondary"> US $99.99 </del> 
+                             </h5>
+                             <!-- icon -->
+                              <i class="bi bi-heart-fill fw-bold"></i>
+                           </div>
+                           <!-- Tittle -->
+                            <h5> Regular Polo Shirt </h5>
+                           <!-- Button -->
+                            <div class="d-flex justify-content-between">
+                                <button class="btn col-6 btn-primary"> ADD TO CARD </button>
+                                <button class="btn btn-success"> BUY NOW </button>
+                            </div>
+                          </div>
+                        </div>                       
+                     </div>
+                     <!-- Card -->
+                        <div class=" col-12 col-md-6 col-lg-3 mb-4" style="height: 550px;">
+                           <div class="card h-100">
+                               <div class="card-header position-relative p-0" style="height: 75%;">
+                                 <img src="./assets/image/gIRL.jpg" class="w-100 h-100 object-fit-cover " alt="">
+                                 <button class="btn btn-danger py-0 fw-bold position-absolute" style="left: 15px; top: 20px;"> -15% </button>
+                               </div>
+                             <div class="card-body" style="height: 25%;">
+                              <div class="d-flex justify-content-between">
+                                <h5 class="text-danger"> US $11.55 
+                                   <del class="text-secondary"> US $99.99 </del> 
+                                </h5>
+                                <!-- icon -->
+                                 <i class="bi bi-heart-fill fw-bold"></i>
+                              </div>
+                              <!-- Tittle -->
+                               <h5> Regular Polo Shirt </h5>
+                              <!-- Button -->
+                               <div class="d-flex justify-content-between">
+                                   <button class="btn col-6 btn-primary"> ADD TO CARD </button>
+                                   <button class="btn btn-success"> BUY NOW </button>
+                               </div>
+                             </div>
+                           </div>                       
+                        </div>
+                  </div>              
+            </div>
+
+           <!-- MAN PRODUCT -->            
+          <div id="men" class="container p-0 py-5">
+                <!-- Tittle -->
+                 <h2 class="fw-bold "> MAN PRODUCT 🔥</h2>
+
+                 <!-- Main-Card -->
+                  <div class="container row m-auto py-3 p-0">
+                    <!-- Card -->
+                     <div class=" col-12 col-md-6 col-lg-3 mb-4" style="height: 550px;">
+                        <div class="card h-100">
+                            <div class="card-header position-relative p-0" style="height: 75%;">
+                              <img src="./assets/image/AA.jpg" class="w-100 h-100 object-fit-cover " alt="">
+                              <button class="btn btn-danger py-0 fw-bold position-absolute" style="left: 15px; top: 20px;"> -15% </button>
+                            </div>
+                          <div class="card-body" style="height: 25%;">
+                           <div class="d-flex justify-content-between">
+                             <h5 class="text-danger"> US $11.55 
+                                <del class="text-secondary"> US $99.99 </del> 
+                             </h5>
+                             <!-- icon -->
+                              <i class="bi bi-heart-fill fw-bold"></i>
+                           </div>
+                           <!-- Tittle -->
+                            <h5> Regular Polo Shirt </h5>
+                           <!-- Button -->
+                            <div class="d-flex justify-content-between">
+                                <button class="btn col-6 btn-primary"> ADD TO CARD </button>
+                                <button class="btn btn-success"> BUY NOW </button>
+                            </div>
+                          </div>
+                        </div>                       
+                     </div>
+                     <!-- Card -->
+                        <div class=" col-12 col-md-6 col-lg-3 mb-4" style="height: 550px;">
+                           <div class="card h-100">
+                               <div class="card-header position-relative p-0" style="height: 75%;">
+                                 <img src="./assets/image/AB.jpg" class="w-100 h-100 object-fit-cover " alt="">
+                                 <button class="btn btn-danger py-0 fw-bold position-absolute" style="left: 15px; top: 20px;"> -15% </button>
+                               </div>
+                             <div class="card-body" style="height: 25%;">
+                              <div class="d-flex justify-content-between">
+                                <h5 class="text-danger"> US $11.55 
+                                   <del class="text-secondary"> US $99.99 </del> 
+                                </h5>
+                                <!-- icon -->
+                                 <i class="bi bi-heart-fill fw-bold"></i>
+                              </div>
+                              <!-- Tittle -->
+                               <h5> Regular Polo Shirt </h5>
+                              <!-- Button -->
+                               <div class="d-flex justify-content-between">
+                                   <button class="btn col-6 btn-primary"> ADD TO CARD </button>
+                                   <button class="btn btn-success"> BUY NOW </button>
+                               </div>
+                             </div>
+                           </div>                       
+                        </div>
+                    <!-- Card -->
+                     <div class=" col-12 col-md-6 col-lg-3 mb-4" style="height: 550px;">
+                        <div class="card h-100">
+                            <div class="card-header position-relative p-0" style="height: 75%;">
+                              <img src="./assets/image/CC.jpg" class="w-100 h-100 object-fit-cover " alt="">
+                              <button class="btn btn-danger py-0 fw-bold position-absolute" style="left: 15px; top: 20px;"> -15% </button>
+                            </div>
+                          <div class="card-body" style="height: 25%;">
+                           <div class="d-flex justify-content-between">
+                             <h5 class="text-danger"> US $11.55 
+                                <del class="text-secondary"> US $99.99 </del> 
+                             </h5>
+                             <!-- icon -->
+                              <i class="bi bi-heart-fill fw-bold"></i>
+                           </div>
+                           <!-- Tittle -->
+                            <h5> Regular Polo Shirt </h5>
+                           <!-- Button -->
+                            <div class="d-flex justify-content-between">
+                                <button class="btn col-6 btn-primary"> ADD TO CARD </button>
+                                <button class="btn btn-success"> BUY NOW </button>
+                            </div>
+                          </div>
+                        </div>                       
+                     </div>
+                     <!-- Card -->
+                        <div class=" col-12 col-md-6 col-lg-3 mb-4" style="height: 550px;">
+                           <div class="card h-100">
+                               <div class="card-header position-relative p-0" style="height: 75%;">
+                                 <img src="./assets/image/QQ.jpg" class="w-100 h-100 object-fit-cover " alt="">
+                                 <button class="btn btn-danger py-0 fw-bold position-absolute" style="left: 15px; top: 20px;"> -15% </button>
+                               </div>
+                             <div class="card-body" style="height: 25%;">
+                              <div class="d-flex justify-content-between">
+                                <h5 class="text-danger"> US $11.55 
+                                   <del class="text-secondary"> US $99.99 </del> 
+                                </h5>
+                                <!-- icon -->
+                                 <i class="bi bi-heart-fill fw-bold"></i>
+                              </div>
+                              <!-- Tittle -->
+                               <h5> Regular Polo Shirt </h5>
+                              <!-- Button -->
+                               <div class="d-flex justify-content-between">
+                                   <button class="btn col-6 btn-primary"> ADD TO CARD </button>
+                                   <button class="btn btn-success"> BUY NOW </button>
+                               </div>
+                             </div>
+                           </div>                       
+                        </div>
+                  </div>
+                  
+                    <!-- Main-Card -->
+                  <div class="container row m-auto py-3 p-0">
+                    <!-- Card -->
+                     <div class=" col-12 col-md-6 col-lg-3 mb-4" style="height: 550px;">
+                        <div class="card h-100">
+                            <div class="card-header position-relative p-0" style="height: 75%;">
+                              <img src="./assets/image/11.jpg" class="w-100 h-100 object-fit-cover " alt="">
+                              <button class="btn btn-danger py-0 fw-bold position-absolute" style="left: 15px; top: 20px;"> -15% </button>
+                            </div>
+                          <div class="card-body" style="height: 25%;">
+                           <div class="d-flex justify-content-between">
+                             <h5 class="text-danger"> US $11.55 
+                                <del class="text-secondary"> US $99.99 </del> 
+                             </h5>
+                             <!-- icon -->
+                              <i class="bi bi-heart-fill fw-bold"></i>
+                           </div>
+                           <!-- Tittle -->
+                            <h5> Regular Polo Shirt </h5>
+                           <!-- Button -->
+                            <div class="d-flex justify-content-between">
+                                <button class="btn col-6 btn-primary"> ADD TO CARD </button>
+                                <button class="btn btn-success"> BUY NOW </button>
+                            </div>
+                          </div>
+                        </div>                       
+                     </div>
+                     <!-- Card -->
+                        <div class=" col-12 col-md-6 col-lg-3 mb-4" style="height: 550px;">
+                           <div class="card h-100">
+                               <div class="card-header position-relative p-0" style="height: 75%;">
+                                 <img src="./assets/image/pp.jpg" class="w-100 h-100 object-fit-cover " alt="">
+                                 <button class="btn btn-danger py-0 fw-bold position-absolute" style="left: 15px; top: 20px;"> -15% </button>
+                               </div>
+                             <div class="card-body" style="height: 25%;">
+                              <div class="d-flex justify-content-between">
+                                <h5 class="text-danger"> US $11.55 
+                                   <del class="text-secondary"> US $99.99 </del> 
+                                </h5>
+                                <!-- icon -->
+                                 <i class="bi bi-heart-fill fw-bold"></i>
+                              </div>
+                              <!-- Tittle -->
+                               <h5> Regular Polo Shirt </h5>
+                              <!-- Button -->
+                               <div class="d-flex justify-content-between">
+                                   <button class="btn col-6 btn-primary"> ADD TO CARD </button>
+                                   <button class="btn btn-success"> BUY NOW </button>
+                               </div>
+                             </div>
+                           </div>                       
+                        </div>
+                    <!-- Card -->
+                     <div class=" col-12 col-md-6 col-lg-3 mb-4" style="height: 550px;">
+                        <div class="card h-100">
+                            <div class="card-header position-relative p-0" style="height: 75%;">
+                              <img src="./assets/image/Oo.jpg" class="w-100 h-100 object-fit-cover " alt="">
+                              <button class="btn btn-danger py-0 fw-bold position-absolute" style="left: 15px; top: 20px;"> -15% </button>
+                            </div>
+                          <div class="card-body" style="height: 25%;">
+                           <div class="d-flex justify-content-between">
+                             <h5 class="text-danger"> US $11.55 
+                                <del class="text-secondary"> US $99.99 </del> 
+                             </h5>
+                             <!-- icon -->
+                              <i class="bi bi-heart-fill fw-bold"></i>
+                           </div>
+                           <!-- Tittle -->
+                            <h5> Regular Polo Shirt </h5>
+                           <!-- Button -->
+                            <div class="d-flex justify-content-between">
+                                <button class="btn col-6 btn-primary"> ADD TO CARD </button>
+                                <button class="btn btn-success"> BUY NOW </button>
+                            </div>
+                          </div>
+                        </div>                       
+                     </div>
+                     <!-- Card -->
+                        <div class=" col-12 col-md-6 col-lg-3 mb-4" style="height: 550px;">
+                           <div class="card h-100">
+                               <div class="card-header position-relative p-0" style="height: 75%;">
+                                 <img src="./assets/image/99.jpg" class="w-100 h-100 object-fit-cover " alt="">
+                                 <button class="btn btn-danger py-0 fw-bold position-absolute" style="left: 15px; top: 20px;"> -15% </button>
+                               </div>
+                             <div class="card-body" style="height: 25%;">
+                              <div class="d-flex justify-content-between">
+                                <h5 class="text-danger"> US $11.55 
+                                   <del class="text-secondary"> US $99.99 </del> 
+                                </h5>
+                                <!-- icon -->
+                                 <i class="bi bi-heart-fill fw-bold"></i>
+                              </div>
+                              <!-- Tittle -->
+                               <h5> Regular Polo Shirt </h5>
+                              <!-- Button -->
+                               <div class="d-flex justify-content-between">
+                                   <button class="btn col-6 btn-primary"> ADD TO CARD </button>
+                                   <button class="btn btn-success"> BUY NOW </button>
+                               </div>
+                             </div>
+                           </div>                       
+                        </div>
+                  </div>
+                  <div class="container row m-auto py-3 p-0">
+                    <!-- Card -->
+                     <div class=" col-12 col-md-6 col-lg-3 mb-4" style="height: 550px;">
+                        <div class="card h-100">
+                            <div class="card-header position-relative p-0" style="height: 75%;">
+                              <img src="./assets/image/2222.jpg" class="w-100 h-100 object-fit-cover " alt="">
+                              <button class="btn btn-danger py-0 fw-bold position-absolute" style="left: 15px; top: 20px;"> -15% </button>
+                            </div>
+                          <div class="card-body" style="height: 25%;">
+                           <div class="d-flex justify-content-between">
+                             <h5 class="text-danger"> US $11.55 
+                                <del class="text-secondary"> US $99.99 </del> 
+                             </h5>
+                             <!-- icon -->
+                              <i class="bi bi-heart-fill fw-bold"></i>
+                           </div>
+                           <!-- Tittle -->
+                            <h5> Regular Polo Shirt </h5>
+                           <!-- Button -->
+                            <div class="d-flex justify-content-between">
+                                <button class="btn col-6 btn-primary"> ADD TO CARD </button>
+                                <button class="btn btn-success"> BUY NOW </button>
+                            </div>
+                          </div>
+                        </div>                       
+                     </div>
+                     <!-- Card -->
+                        <div class=" col-12 col-md-6 col-lg-3 mb-4" style="height: 550px;">
+                           <div class="card h-100">
+                               <div class="card-header position-relative p-0" style="height: 75%;">
+                                 <img src="./assets/image/MM.jpg" class="w-100 h-100 object-fit-cover " alt="">
+                                 <button class="btn btn-danger py-0 fw-bold position-absolute" style="left: 15px; top: 20px;"> -15% </button>
+                               </div>
+                             <div class="card-body" style="height: 25%;">
+                              <div class="d-flex justify-content-between">
+                                <h5 class="text-danger"> US $11.55 
+                                   <del class="text-secondary"> US $99.99 </del> 
+                                </h5>
+                                <!-- icon -->
+                                 <i class="bi bi-heart-fill fw-bold"></i>
+                              </div>
+                              <!-- Tittle -->
+                               <h5> Regular Polo Shirt </h5>
+                              <!-- Button -->
+                               <div class="d-flex justify-content-between">
+                                   <button class="btn col-6 btn-primary"> ADD TO CARD </button>
+                                   <button class="btn btn-success"> BUY NOW </button>
+                               </div>
+                             </div>
+                           </div>                       
+                        </div>
+                    <!-- Card -->
+                     <div class=" col-12 col-md-6 col-lg-3 mb-4" style="height: 550px;">
+                        <div class="card h-100">
+                            <div class="card-header position-relative p-0" style="height: 75%;">
+                              <img src="./assets/image/ti.jpg" class="w-100 h-100 object-fit-cover " alt="">
+                              <button class="btn btn-danger py-0 fw-bold position-absolute" style="left: 15px; top: 20px;"> -15% </button>
+                            </div>
+                          <div class="card-body" style="height: 25%;">
+                           <div class="d-flex justify-content-between">
+                             <h5 class="text-danger"> US $11.55 
+                                <del class="text-secondary"> US $99.99 </del> 
+                             </h5>
+                             <!-- icon -->
+                              <i class="bi bi-heart-fill fw-bold"></i>
+                           </div>
+                           <!-- Tittle -->
+                            <h5> Regular Polo Shirt </h5>
+                           <!-- Button -->
+                            <div class="d-flex justify-content-between">
+                                <button class="btn col-6 btn-primary"> ADD TO CARD </button>
+                                <button class="btn btn-success"> BUY NOW </button>
+                            </div>
+                          </div>
+                        </div>                       
+                     </div>
+                     <!-- Card -->
+                        <div class=" col-12 col-md-6 col-lg-3 mb-4" style="height: 550px;">
+                           <div class="card h-100">
+                               <div class="card-header position-relative p-0" style="height: 75%;">
+                                 <img src="./assets/image/ZZ.jpg" class="w-100 h-100 object-fit-cover " alt="">
+                                 <button class="btn btn-danger py-0 fw-bold position-absolute" style="left: 15px; top: 20px;"> -15% </button>
+                               </div>
+                             <div class="card-body" style="height: 25%;">
+                              <div class="d-flex justify-content-between">
+                                <h5 class="text-danger"> US $11.55 
+                                   <del class="text-secondary"> US $99.99 </del> 
+                                </h5>
+                                <!-- icon -->
+                                 <i class="bi bi-heart-fill fw-bold"></i>
+                              </div>
+                              <!-- Tittle -->
+                               <h5> Regular Polo Shirt </h5>
+                              <!-- Button -->
+                               <div class="d-flex justify-content-between">
+                                   <button class="btn col-6 btn-primary"> ADD TO CARD </button>
+                                   <button class="btn btn-success"> BUY NOW </button>
+                               </div>
+                             </div>
+                           </div>                       
+                        </div>
+                  </div>
+                
+            </div>
+
+              <!-- BOYS PRODUCT -->
+            
+          <div id="boys" class="container p-0 py-5">
+                <!-- Tittle -->
+                 <h2 class="fw-bold "> BOYS PRODUCT 🔥</h2>
+
+                 <!-- Main-Card -->
+                  <div class="container row m-auto py-3 p-0">
+                    <!-- Card -->
+                     <div class=" col-12 col-md-6 col-lg-3 mb-4" style="height: 550px;">
+                        <div class="card h-100">
+                            <div class="card-header position-relative p-0" style="height: 75%;">
+                              <img src="./assets/image/Boy1.jpg" class="w-100 h-100 object-fit-cover " alt="">
+                              <button class="btn btn-danger py-0 fw-bold position-absolute" style="left: 15px; top: 20px;"> -15% </button>
+                            </div>
+                          <div class="card-body" style="height: 25%;">
+                           <div class="d-flex justify-content-between">
+                             <h5 class="text-danger"> US $11.55 
+                                <del class="text-secondary"> US $99.99 </del> 
+                             </h5>
+                             <!-- icon -->
+                              <i class="bi bi-heart-fill fw-bold"></i>
+                           </div>
+                           <!-- Tittle -->
+                            <h5> Regular Polo Shirt </h5>
+                           <!-- Button -->
+                            <div class="d-flex justify-content-between">
+                                <button class="btn col-6 btn-primary"> ADD TO CARD </button>
+                                <button class="btn btn-success"> BUY NOW </button>
+                            </div>
+                          </div>
+                        </div>                       
+                     </div>
+                     <!-- Card -->
+                        <div class=" col-12 col-md-6 col-lg-3 mb-4" style="height: 550px;">
+                           <div class="card h-100">
+                               <div class="card-header position-relative p-0" style="height: 75%;">
+                                 <img src="./assets/image/Boy2.jpg" class="w-100 h-100 object-fit-cover " alt="">
+                                 <button class="btn btn-danger py-0 fw-bold position-absolute" style="left: 15px; top: 20px;"> -15% </button>
+                               </div>
+                             <div class="card-body" style="height: 25%;">
+                              <div class="d-flex justify-content-between">
+                                <h5 class="text-danger"> US $11.55 
+                                   <del class="text-secondary"> US $99.99 </del> 
+                                </h5>
+                                <!-- icon -->
+                                 <i class="bi bi-heart-fill fw-bold"></i>
+                              </div>
+                              <!-- Tittle -->
+                               <h5> Regular Polo Shirt </h5>
+                              <!-- Button -->
+                               <div class="d-flex justify-content-between">
+                                   <button class="btn col-6 btn-primary"> ADD TO CARD </button>
+                                   <button class="btn btn-success"> BUY NOW </button>
+                               </div>
+                             </div>
+                           </div>                       
+                        </div>
+                    <!-- Card -->
+                     <div class=" col-12 col-md-6 col-lg-3 mb-4" style="height: 550px;">
+                        <div class="card h-100">
+                            <div class="card-header position-relative p-0" style="height: 75%;">
+                              <img src="./assets/image/boy3.webp" class="w-100 h-100 object-fit-cover " alt="">
+                              <button class="btn btn-danger py-0 fw-bold position-absolute" style="left: 15px; top: 20px;"> -15% </button>
+                            </div>
+                          <div class="card-body" style="height: 25%;">
+                           <div class="d-flex justify-content-between">
+                             <h5 class="text-danger"> US $11.55 
+                                <del class="text-secondary"> US $99.99 </del> 
+                             </h5>
+                             <!-- icon -->
+                              <i class="bi bi-heart-fill fw-bold"></i>
+                           </div>
+                           <!-- Tittle -->
+                            <h5> Regular Polo Shirt </h5>
+                           <!-- Button -->
+                            <div class="d-flex justify-content-between">
+                                <button class="btn col-6 btn-primary"> ADD TO CARD </button>
+                                <button class="btn btn-success"> BUY NOW </button>
+                            </div>
+                          </div>
+                        </div>                       
+                     </div>
+                     <!-- Card -->
+                        <div class=" col-12 col-md-6 col-lg-3 mb-4" style="height: 550px;">
+                           <div class="card h-100">
+                               <div class="card-header position-relative p-0" style="height: 75%;">
+                                 <img src="./assets/image/Boy4.webp" class="w-100 h-100 object-fit-cover " alt="">
+                                 <button class="btn btn-danger py-0 fw-bold position-absolute" style="left: 15px; top: 20px;"> -15% </button>
+                               </div>
+                             <div class="card-body" style="height: 25%;">
+                              <div class="d-flex justify-content-between">
+                                <h5 class="text-danger"> US $11.55 
+                                   <del class="text-secondary"> US $99.99 </del> 
+                                </h5>
+                                <!-- icon -->
+                                 <i class="bi bi-heart-fill fw-bold"></i>
+                              </div>
+                              <!-- Tittle -->
+                               <h5> Regular Polo Shirt </h5>
+                              <!-- Button -->
+                               <div class="d-flex justify-content-between">
+                                   <button class="btn col-6 btn-primary"> ADD TO CARD </button>
+                                   <button class="btn btn-success"> BUY NOW </button>
+                               </div>
+                             </div>
+                           </div>                       
+                        </div>
+                  </div>
+                  
+                    <!-- Main-Card -->
+                  <div class="container row m-auto py-3 p-0">
+                    <!-- Card -->
+                     <div class=" col-12 col-md-6 col-lg-3 mb-4" style="height: 550px;">
+                        <div class="card h-100">
+                            <div class="card-header position-relative p-0" style="height: 75%;">
+                              <img src="./assets/image/boy5.webp" class="w-100 h-100 object-fit-cover " alt="">
+                              <button class="btn btn-danger py-0 fw-bold position-absolute" style="left: 15px; top: 20px;"> -15% </button>
+                            </div>
+                          <div class="card-body" style="height: 25%;">
+                           <div class="d-flex justify-content-between">
+                             <h5 class="text-danger"> US $11.55 
+                                <del class="text-secondary"> US $99.99 </del> 
+                             </h5>
+                             <!-- icon -->
+                              <i class="bi bi-heart-fill fw-bold"></i>
+                           </div>
+                           <!-- Tittle -->
+                            <h5> Regular Polo Shirt </h5>
+                           <!-- Button -->
+                            <div class="d-flex justify-content-between">
+                                <button class="btn col-6 btn-primary"> ADD TO CARD </button>
+                                <button class="btn btn-success"> BUY NOW </button>
+                            </div>
+                          </div>
+                        </div>                       
+                     </div>
+                     <!-- Card -->
+                        <div class=" col-12 col-md-6 col-lg-3 mb-4" style="height: 550px;">
+                           <div class="card h-100">
+                               <div class="card-header position-relative p-0" style="height: 75%;">
+                                 <img src="./assets/image/boy6.webp" class="w-100 h-100 object-fit-cover " alt="">
+                                 <button class="btn btn-danger py-0 fw-bold position-absolute" style="left: 15px; top: 20px;"> -15% </button>
+                               </div>
+                             <div class="card-body" style="height: 25%;">
+                              <div class="d-flex justify-content-between">
+                                <h5 class="text-danger"> US $11.55 
+                                   <del class="text-secondary"> US $99.99 </del> 
+                                </h5>
+                                <!-- icon -->
+                                 <i class="bi bi-heart-fill fw-bold"></i>
+                              </div>
+                              <!-- Tittle -->
+                               <h5> Regular Polo Shirt </h5>
+                              <!-- Button -->
+                               <div class="d-flex justify-content-between">
+                                   <button class="btn col-6 btn-primary"> ADD TO CARD </button>
+                                   <button class="btn btn-success"> BUY NOW </button>
+                               </div>
+                             </div>
+                           </div>                       
+                        </div>
+                    <!-- Card -->
+                     <div class=" col-12 col-md-6 col-lg-3 mb-4" style="height: 550px;">
+                        <div class="card h-100">
+                            <div class="card-header position-relative p-0" style="height: 75%;">
+                              <img src="./assets/image/boy7.webp" class="w-100 h-100 object-fit-cover " alt="">
+                              <button class="btn btn-danger py-0 fw-bold position-absolute" style="left: 15px; top: 20px;"> -15% </button>
+                            </div>
+                          <div class="card-body" style="height: 25%;">
+                           <div class="d-flex justify-content-between">
+                             <h5 class="text-danger"> US $11.55 
+                                <del class="text-secondary"> US $99.99 </del> 
+                             </h5>
+                             <!-- icon -->
+                              <i class="bi bi-heart-fill fw-bold"></i>
+                           </div>
+                           <!-- Tittle -->
+                            <h5> Regular Polo Shirt </h5>
+                           <!-- Button -->
+                            <div class="d-flex justify-content-between">
+                                <button class="btn col-6 btn-primary"> ADD TO CARD </button>
+                                <button class="btn btn-success"> BUY NOW </button>
+                            </div>
+                          </div>
+                        </div>                       
+                     </div>
+                     <!-- Card -->
+                        <div class=" col-12 col-md-6 col-lg-3 mb-4" style="height: 550px;">
+                           <div class="card h-100">
+                               <div class="card-header position-relative p-0" style="height: 75%;">
+                                 <img src="./assets/image/boy8.jpg" class="w-100 h-100 object-fit-cover " alt="">
+                                 <button class="btn btn-danger py-0 fw-bold position-absolute" style="left: 15px; top: 20px;"> -15% </button>
+                               </div>
+                             <div class="card-body" style="height: 25%;">
+                              <div class="d-flex justify-content-between">
+                                <h5 class="text-danger"> US $11.55 
+                                   <del class="text-secondary"> US $99.99 </del> 
+                                </h5>
+                                <!-- icon -->
+                                 <i class="bi bi-heart-fill fw-bold"></i>
+                              </div>
+                              <!-- Tittle -->
+                               <h5> Regular Polo Shirt </h5>
+                              <!-- Button -->
+                               <div class="d-flex justify-content-between">
+                                   <button class="btn col-6 btn-primary"> ADD TO CARD </button>
+                                   <button class="btn btn-success"> BUY NOW </button>
+                               </div>
+                             </div>
+                           </div>                       
+                        </div>
+                  </div>
+
+                     <!-- Main-Card -->
+                  <div class="container row m-auto py-3 p-0">
+                    <!-- Card -->
+                     <div class=" col-12 col-md-6 col-lg-3 mb-4" style="height: 550px;">
+                        <div class="card h-100">
+                            <div class="card-header position-relative p-0" style="height: 75%;">
+                              <img src="./assets/image/boyy9.webp" class="w-100 h-100 object-fit-cover " alt="">
+                              <button class="btn btn-danger py-0 fw-bold position-absolute" style="left: 15px; top: 20px;"> -15% </button>
+                            </div>
+                          <div class="card-body" style="height: 25%;">
+                           <div class="d-flex justify-content-between">
+                             <h5 class="text-danger"> US $11.55 
+                                <del class="text-secondary"> US $99.99 </del> 
+                             </h5>
+                             <!-- icon -->
+                              <i class="bi bi-heart-fill fw-bold"></i>
+                           </div>
+                           <!-- Tittle -->
+                            <h5> Regular Polo Shirt </h5>
+                           <!-- Button -->
+                            <div class="d-flex justify-content-between">
+                                <button class="btn col-6 btn-primary"> ADD TO CARD </button>
+                                <button class="btn btn-success"> BUY NOW </button>
+                            </div>
+                          </div>
+                        </div>                       
+                     </div>
+                     <!-- Card -->
+                        <div class=" col-12 col-md-6 col-lg-3 mb-4" style="height: 550px;">
+                           <div class="card h-100">
+                               <div class="card-header position-relative p-0" style="height: 75%;">
+                                 <img src="./assets/image/boy10.avif" class="w-100 h-100 object-fit-cover " alt="">
+                                 <button class="btn btn-danger py-0 fw-bold position-absolute" style="left: 15px; top: 20px;"> -15% </button>
+                               </div>
+                             <div class="card-body" style="height: 25%;">
+                              <div class="d-flex justify-content-between">
+                                <h5 class="text-danger"> US $11.55 
+                                   <del class="text-secondary"> US $99.99 </del> 
+                                </h5>
+                                <!-- icon -->
+                                 <i class="bi bi-heart-fill fw-bold"></i>
+                              </div>
+                              <!-- Tittle -->
+                               <h5> Regular Polo Shirt </h5>
+                              <!-- Button -->
+                               <div class="d-flex justify-content-between">
+                                   <button class="btn col-6 btn-primary"> ADD TO CARD </button>
+                                   <button class="btn btn-success"> BUY NOW </button>
+                               </div>
+                             </div>
+                           </div>                       
+                        </div>
+                    <!-- Card -->
+                     <div class=" col-12 col-md-6 col-lg-3 mb-4" style="height: 550px;">
+                        <div class="card h-100">
+                            <div class="card-header position-relative p-0" style="height: 75%;">
+                              <img src="./assets/image/11.jpg" class="w-100 h-100 object-fit-cover " alt="">
+                              <button class="btn btn-danger py-0 fw-bold position-absolute" style="left: 15px; top: 20px;"> -15% </button>
+                            </div>
+                          <div class="card-body" style="height: 25%;">
+                           <div class="d-flex justify-content-between">
+                             <h5 class="text-danger"> US $11.55 
+                                <del class="text-secondary"> US $99.99 </del> 
+                             </h5>
+                             <!-- icon -->
+                              <i class="bi bi-heart-fill fw-bold"></i>
+                           </div>
+                           <!-- Tittle -->
+                            <h5> Regular Polo Shirt </h5>
+                           <!-- Button -->
+                            <div class="d-flex justify-content-between">
+                                <button class="btn col-6 btn-primary"> ADD TO CARD </button>
+                                <button class="btn btn-success"> BUY NOW </button>
+                            </div>
+                          </div>
+                        </div>                       
+                     </div>
+                     <!-- Card -->
+                        <div class=" col-12 col-md-6 col-lg-3 mb-4" style="height: 550px;">
+                           <div class="card h-100">
+                               <div class="card-header position-relative p-0" style="height: 75%;">
+                                 <img src="./assets/image/boy12.webp" class="w-100 h-100 object-fit-cover " alt="">
+                                 <button class="btn btn-danger py-0 fw-bold position-absolute" style="left: 15px; top: 20px;"> -15% </button>
+                               </div>
+                             <div class="card-body" style="height: 25%;">
+                              <div class="d-flex justify-content-between">
+                                <h5 class="text-danger"> US $11.55 
+                                   <del class="text-secondary"> US $99.99 </del> 
+                                </h5>
+                                <!-- icon -->
+                                 <i class="bi bi-heart-fill fw-bold"></i>
+                              </div>
+                              <!-- Tittle -->
+                               <h5> Regular Polo Shirt </h5>
+                              <!-- Button -->
+                               <div class="d-flex justify-content-between">
+                                   <button class="btn col-6 btn-primary"> ADD TO CARD </button>
+                                   <button class="btn btn-success"> BUY NOW </button>
+                               </div>
+                             </div>
+                           </div>                       
+                        </div>
+                  </div>              
+            </div>
+            
+            <!-- Map & Contact -->
+             <div class="container-fluid">
+                <h2 class="text-center"> Contact Us </h2>
+                <!-- Main Contain -->
+                 <div class="container row mx-auto p-0">
+                  <!-- Map -->
+                   <div class="col-12 col-md-6 mb-4">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15635.670677454762!2d104.85713725!3d11.557759749999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2skh!4v1772023297497!5m2!1sen!2skh" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                   </div>
+                   <!-- Form Contact -->
+                    <div class="col-12 col-md-6 mb-4">
+                      <form class="border border-3 border-primary rounded-4 p-5 h-100">
+                        <div class="mb-4">
+                          <input type="text" class="form-control shadow-none fs-5 py-2" placeholder="Your Name">
+                        </div>
+                        <div class="mb-4">
+                          <input type="email" class="form-control shadow-none fs-5 py-2" placeholder="Your Email Address">
+                        </div>
+                        <div class="mb-4">
+                          <textarea rows="4" class="form-control shadow-none fs-5 p-3" placeholder="Your Message"></textarea>
+                        </div>
+                        <div class="d-flex justify-content-end">
+                          <button class="btn btn-primary w-100 btn-lg"> Send </button>
+                        </div>
+                      </form>
+                    </div>
+                 </div>
+             </div>
+    </main>
+
+    <!-- footer -->
+    <footer class="container-fluid border-top p-0">
+        <div class="container p-0">
+          <!-- Media -->
+           <div class="container row m-auto py-5 p-0">
+              <div class="col-12 col-md-4">
+                <h2 class="fw-bold pb-3">Zando Shop</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+              <div class="col-12 col-md-4">
+                <h2 class="fw-bold pb-3">Get In Touch</h2>
+                <p class="m-0 pb-1"> Address : Etec Center & Kru IT Solution</p>
+                <p class="m-0 pb-1"> Email : eteccenter@gmail.com</p>
+                <p class="m-0 pb-1"> Phone Number : 885#123456789</p>
+              </div>
+              <div class="col-12 col-md-4">
+                <h2 class="fw-bold pb-3">Newsleter</h2>
+                <p class="m-0 pb-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <input type="text" class="form-control shadow-none bg-primary text-light py-3" placeholder="Your Email Address">
+              </div>             
+           </div>
+        </div>
+        <!-- Info Build -->
+         <h5 class="text-center py-4 m-0" style="background-color: rgb(214, 214, 214);">
+          &copy; Zando Shop . All Right Reserverd | Build By .....</h5>
+    </footer>
+</body>
+</html>

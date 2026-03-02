@@ -1,0 +1,52 @@
+body{
+    font-family: "Siemreap", sans-serif;
+}
+header{
+    height: 15vh;
+    box-shadow: 5px 0px 3px black;
+}
+header > #nav-top{
+    height: 60%;
+}
+header > #nav-bottom{
+    height: 40%;
+    background-color: rgb(225, 240, 240);
+}
+.nav > .nav-item{
+    cursor: pointer;
+    padding: 5px 4px;
+    transition: all .3s ease-in-out;
+}
+.nav > .nav-item:hover{
+    background-color: rgba(211, 211, 211, 0.372);
+    padding-left: 15px;
+    transition: all .3s ease-in-out;
+}
+
+
+/* phone */
+@media screen and (max-width:576px) {
+    .offcanvas-top{
+        height: 23% !important;
+        width: 100% !important;
+    }
+}
+
+/* tablet */
+@media screen and (min-width:577px) and (max-width:992px){
+    .offcanvas{
+        width: 50% !important;
+    }
+    .offcanvas-top{
+        height: 16% !important;
+        width: 100% !important;
+    }
+}
+
+/* laptop up */
+@media screen and (min-width:993px) {
+    .offcanvas-top{
+        height: 25% !important;
+        width: 100% !important;
+    }
+}

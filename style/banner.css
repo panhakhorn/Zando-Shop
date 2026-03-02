@@ -1,0 +1,46 @@
+  #banner-image{
+    height: 90vh !important;
+}
+#main-btn-shop{
+    left: 50%;
+    top: 88%;
+    transform: translate(-50%,-50%);
+}
+#btn-shop{
+    transition: all .3s ease-out;
+    box-shadow: 0px 0px 10px white;
+
+}
+#btn-shop:hover{
+    transform: translate(-7px);
+    box-shadow: 0px 5px 10px white;
+    transition: all .3s ease-out;
+}
+#logo-company{
+    width: 220px;
+}
+#carousel-banner{
+    height: 350px;
+}
+@media screen and (max-width:576px) {
+    #banner-image{
+    height: 30vh !important;
+}
+#carousel-banner{
+    height: 120px;
+}
+#logo-company{
+    width: 100px;
+}
+}
+@media screen and (max-width:577px) and (max-width:993px) {
+    #banner-image{
+    height: 40vh !important;
+}
+#logo-company{
+    width: 100px;
+}
+#carousel-banner{
+    height: 200px;
+}
+}
